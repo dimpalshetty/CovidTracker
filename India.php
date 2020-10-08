@@ -7,13 +7,7 @@
 </head>
 <body>
 
-  <?php
- 
- $server = "sql306.epizy.com";
- $username = "epiz_26879335";
- $password ="3b3Wls7fAqEfc";
- $dbname ="epiz_26879335_coronaupdates";
- ?>
+  
 	<nav class="navbar navbar-expand-lg nav_style p-3">
   <a class="navbar-brand pl-5" href="#">COVID-19</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -97,6 +91,11 @@ while($i < $statescount){
       
     </table>
   </div>
+  <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">Copyright &copy;2020, Dimpal </span>
+        </div>
+    </footer>
  
  </body>
 </html>
