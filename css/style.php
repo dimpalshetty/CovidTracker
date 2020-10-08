@@ -1,92 +1,98 @@
 <style type="text/css">
-	*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Mulish', sans-serif; }
-
-.nav_style{
-	background-color: #a1cad5!important; 
-}
-.nav_style a{
-color: white;
-}
-@media only screen and (max-width:600px){
-	.navbar{
-        height: 60px;
-        width: 100%;
-		display: inline-flex;
-		padding: 10px;;
-	
-	}
-	.nav{
-        width: 100%;
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Mulish', sans-serif;
 	}
 
-	.rightside{
-		width: 50%;
-		height: 50%;
+	.nav_style {
+		background-color: #a1cad5 !important;
 	}
-    .rightside h1{
-		width: 50%;
-		height: 50%;
-		margin-top: -100;
-		text-align: center;
+
+	.nav_style a {
+		color: white;
 	}
-	.leftside img{
-		margin-top: -150;
+
+	.main_header {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
 	}
-	.section_header h1{
-		text-align: center;
-		margin-top: -10;
-		padding-right: 2px;
+
+	.mask {
+		padding: 2%;
 	}
-	.img.img-fluid{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
- 
+
+	.title_1 {
+		margin: 10%, 2%, 0%, 2%;
+		flex-wrap: wrap;
+
 	}
-	.div.rightside{
-		width: 50%;
+
+	@media(max-width:720px) {
+		.main_header {
+			flex-flow: column wrap;
+			align-items: center;
+			margin: 2%;
+		}
+
+		.title_1 {
+			text-align: center;
+		}
 	}
-	
-}
+
+	.about_main {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		margin: 2%;
+		padding-top: 10%;
+	}
+
+	.info{
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		margin: 5%;
+	}
+	/* .about_body{
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		margin: 2%;
+	} */
+	.image_2{
+		margin: 2%;
+		padding-bottom: 2%;
+	}
 
 
+	@media(min-width:720px) {
+		.about {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: column;
+			margin: 2%;
+		}
 
-.main_header{
-	height: 450px;
-	width: 100%;
-}
+		.info {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
 
-.rightside h1{
-	font-size: 3rem;
-}
+		}
 
-.leftside img{ animation: mask 5s linear infinite; }
+		.image_2 {
+			margin: 2%;
+		}
 
-@keyframes mask {
-	0%
-	{
-		transform: scale(.75);
+		.about_body {
+			display: flex;
+			flex-wrap: nowrap;
+			flex-direction: column;
+			margin: 2%;
+		}
 	}
-	20%
-	{
-		transform: scale(1);
-	}
-	40%
-	{
-		transform: scale(.75);
-	}
-	60%
-	{
-		transform: scale(1);
-	}
-	80%
-	{
-		transform: scale(.75);
-	}
-	100%
-	{
-		transform: scale(1);
-	}
-}
-</style> 
-
+</style>
